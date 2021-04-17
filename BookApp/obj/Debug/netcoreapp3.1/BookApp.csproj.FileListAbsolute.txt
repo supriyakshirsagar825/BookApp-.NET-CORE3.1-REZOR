@@ -80,3 +80,4 @@ C:\Users\pankaj\Desktop\ASP.NET MVC Projects\BookApp\BookApp\obj\Debug\netcoreap
 C:\Users\pankaj\Desktop\ASP.NET MVC Projects\BookApp\BookApp\obj\Debug\netcoreapp3.1\Razor\Pages\BookList\Index.cshtml.g.cs
 C:\Users\pankaj\Desktop\ASP.NET MVC Projects\BookApp\BookApp\obj\Debug\netcoreapp3.1\Razor\Pages\BookList\Create.cshtml.g.cs
 C:\Users\pankaj\Desktop\ASP.NET MVC Projects\BookApp\BookApp\obj\Debug\netcoreapp3.1\Razor\Pages\BookList\Edit.cshtml.g.cs
+C:\Users\pankaj\Desktop\ASP.NET MVC Projects\BookApp\BookApp\obj\Debug\netcoreapp3.1\Razor\Pages\BookList\Upsert.cshtml.g.cs
