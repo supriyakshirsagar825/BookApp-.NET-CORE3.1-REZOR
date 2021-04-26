@@ -1,0 +1,54 @@
+﻿@model BookAppWith.NetCoreMVC.Models.Book
+
+@{
+    ViewData["Title"] = "Upsert";
+}
+
+<h1>Upsert</h1>
+
+<h4>@(Model.Id!=0?"Edit":"Create") Book</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Upsert" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                @if (Model.Id != 0)
+                {
+                <input  type="hidden" asp-for="Id"  />
+                }
+
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Author" class="control-label"></label>
+                <input asp-for="Author" class="form-control" />
+                <span asp-validation-for="Author" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ISBN" class="control-label"></label>
+                <input asp-for="ISBN" class="form-control" />
+                <span asp-validation-for="ISBN" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit"  class="btn btn-primary" >
+                    @(Model.Id!=0?"Update":"Create")
+                </button>
+                
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts{ 
+<partial name="_ValidationScriptsPartial" />
+}
